@@ -187,5 +187,3 @@ def deriv_string(string):
     old_tree = buildParseTree(string)
     new_tree = deriv(old_tree)
     return to_string(new_tree)
-
-print(deriv_string('( ( 2 * x ) + ( x ** 3 ) )'))
