@@ -89,7 +89,7 @@ for i in range (1,1001):
     t2 = time.time()
     y.append(t2 - t1)
     x.append(i)
-    y2.append(i*math.log(i, 10**250000))
+    y2.append((10**(-5.9))*i*math.log(i, 2))
     
 plt.scatter(x, y, label='wyniki pomiaru')
 plt.plot(x, y2, color='r', label='t(n)')
